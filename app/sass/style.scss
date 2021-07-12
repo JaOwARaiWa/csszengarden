@@ -1,0 +1,158 @@
+@font-face {
+    font-family: r;
+    src: url('font/Mitr-Regular.ttf');
+}
+
+@font-face {
+    font-family: xs;
+    src: url('font/Mitr-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: s;
+    src: url('font/Mitr-Light.ttf');
+}
+
+a:link{
+    color: #D7FFF1;
+}
+
+a:visited {
+    color: lightsalmon;
+}
+
+a:hover {
+    color: crimson;
+}
+
+a:active {
+    color: maroon;
+}
+
+abbr:hover {
+    color: palevioletred;
+}
+
+body {
+    background-image: url('images/Background.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    background-color: rgba($color: #333, $alpha: 0.9);
+    width: 80%;
+    margin: auto;
+}
+
+.intro {
+    color: whitesmoke;
+
+    header {
+        background-image: url('images/Banner.jpg');
+
+        h1 {
+            background-color: rgba($color: #333, $alpha: 0.8);
+            font-family: r;
+            font-size: 5em;
+            padding-left: 35px;
+            padding-bottom: 20px;
+            margin: 0;
+        }
+
+        h2 {
+            color: #050609;
+            font-family: r;
+            font-size: 3.5em;
+            text-align: right;
+            padding-right: 40px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .summary {
+        font-family: xs;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .preamble {
+        font-family: s;
+        color: #050609;
+        background-color: #F5D0C5;
+        margin-top: 50px;
+        padding: 20px;
+        max-width: 600;
+    }
+}
+
+#zen-supporting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba($color: #050609, $alpha: 0.5);
+    font-family: s;
+    color: whitesmoke;
+
+    .explanation {
+        color: #050609;
+        background-color: #D69F7E;
+        padding: 20px;
+    }
+
+    .participation {
+        background-color: #774936;
+        padding: 20px;
+    }
+
+    .benefits {
+        background-color: #3C0000;
+        padding: 20px;
+    }
+
+    .requirements {
+        background-color: #5D2E46;
+        padding: 20px;
+    }
+
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+        background-color: #AD6A6C;
+        padding: 20px;
+
+        a[class^="zen-"] {
+            background-color: #030027;
+            border: solid 2px #333;
+            border-radius: 50px;
+            padding: 5px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: s;
+    background-color: #91785D;
+    padding: auto;
+
+    h3 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #zen-supporting {
+        display: block;
+    }
+}
